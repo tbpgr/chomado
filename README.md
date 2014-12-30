@@ -25,6 +25,7 @@ Or install it yourself as:
 
 ~~~bash
 $ chomad commands
+commands
 homo
 lolita
 ~~~
