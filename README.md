@@ -43,6 +43,23 @@ $ chomad lolita
 はるかぜﾀｿ ﾊｧﾊｧ
 ~~~
 
+### help
+
+~~~bash
+$chomado help
+Commands:
+  chomado commands        # show subcommands
+  chomado excel           # chomado hate excel
+  chomado help [COMMAND]  # Describe available commands or one specific command
+  chomado homo            # chomado love homo
+  chomado lolita          # chomado love lolita
+  chomado version         # version
+
+Options:
+  -h, [--help], [--no-help]        # help message.
+      [--version], [--no-version]  # version
+~~~
+
 ## Contributing
 
 1. Fork it ( https://github.com/tbpgr/chomado/fork )
