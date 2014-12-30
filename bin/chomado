@@ -1,0 +1,42 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+require 'chomado'
+require 'chomado/version'
+require 'thor'
+
+module Chomado
+  # = Chomado CLI
+  class CLI < Thor
+    class_option :help, type: :boolean, aliases: '-h', desc: 'help message.'
+    class_option :version, type: :boolean, desc: 'version'
+
+    desc 'commands', 'show subcommands'
+    def commands
+      puts Chomado.commands
+    end
+
+    desc 'homo', 'chomado love homo'
+    def homo
+      puts Chomado.homo
+    end
+
+    desc 'lolita', 'chomado love lolita'
+    def lolita
+      puts Chomado.lolita
+    end
+
+    desc 'excel', 'chomado hate excel'
+    def excel
+      STDERR.puts "screenshot error!!"
+      exit(false)
+    end
+
+    desc 'version', 'version'
+    def version
+      p Chomado::VERSION
+    end
+  end
+end
+
+Chomado::CLI.start(ARGV)
